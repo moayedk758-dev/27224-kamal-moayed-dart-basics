@@ -39,6 +39,21 @@ String initials(String fullName) {
   return result;
 }
 
+// Part C5 - Right-Aligned Triangle
+void drawTriangle(int height) {
+  // by MK
+  int row = 1;
+
+  while (row <= height) {
+    String spaces = ' ' * (height - row);
+    String symbol = row.isOdd ? '*' : '#';
+    String symbols = symbol * row;
+
+    print(spaces + symbols);
+    row++;
+  }
+}
+
 // Main Function
 void main() {
   // by MK
@@ -53,4 +68,11 @@ void main() {
   print('Initials: ${initials(name)}');
   print("Extra spaces: ${initials(' ana uwase ')}");
   print('Empty input: "${initials('   ')}"');
+
+  print('--- Part C5: Triangle ---');
+  drawTriangle(d + 3);
+
+  // These calls must print nothing.
+  drawTriangle(0);
+  drawTriangle(-2);
 }
