@@ -1,24 +1,21 @@
-
 # Dart Basics Assignment - Progress Status
 
 Student: Moayed Kamal
 Registration Number: 27224
 
-## Done
-- Project folder created.
-- README.md completed.
-
-## In progress
-- A1: Variables and operators.
-
-## Stuck on
-- None at the moment.
-
-## Questions Not Started
-- A2
-- B1, B2, B3
-- C1, C2, C3, C4, C5
-- D1, D2
+## Completed
+- Parts A1 and A2: Output predictions and tests
+- Part B: Strings and functions
+- Part C: Control flow and triangle
+- Part D: Functions and MoMo receipt printer
 - Part E: Find and fix
 - Part F: MoMo USSD simulator
+- Dart analysis: No issues found
+- GitHub commits and pushes completed
+
+## In Progress
 - Part G: Debugging log
+- answers.pdf: Final written report
+
+## Stuck On
+- None

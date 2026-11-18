@@ -74,24 +74,6 @@ String maskPhone(String phone) {
       phone.substring(8);
 }
 
-void printReceipts() {
-  // by MK
-  int i = 1;
-  int totalFees = 0;
-  String phone = '0788123456';
-
-  while (i <= d + 3) {
-    int amount = i * 4000 + t * 100;
-    int fee = momoFee(amount);
-    totalFees += fee;
-
-    print('Receipt $i | $amount RWF | fee $fee RWF | to ${maskPhone(phone)}');
-    i++;
-  }
-
-  print('Total fees: $totalFees RWF');
-}
-
 // Main Function
 void main() {
   // by MK
@@ -115,5 +97,18 @@ void main() {
   drawTriangle(-2);
 
   print('--- Part D2: MoMo Receipts ---');
-  printReceipts();
+  int i = 1;
+  int totalFees = 0;
+  String phone = '0788123456';
+
+  while (i <= d + 3) {
+    int amount = i * 4000 + t * 100;
+    int fee = momoFee(amount);
+    totalFees += fee;
+
+    print('Receipt $i | $amount RWF | fee $fee RWF | to ${maskPhone(phone)}');
+    i++;
+  }
+
+  print('Total fees: $totalFees RWF');
 }
