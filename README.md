@@ -7,7 +7,7 @@
 - Registration Number: 27224
 - D (Last Digit): 4
 - T (Last Two Digits): 24
-- GitHub Username: moayedkamal
+- GitHub Username: moayedk758-dev
 
 ## Assignment Information
 
