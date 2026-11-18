@@ -23,22 +23,23 @@ int countVowels(String text) {
 }
 
 // Part B3 - Get Initials
-String getInitials(String fullName) {
+String initials(String fullName) {
   // by MK
+  String result = '';
   List<String> words = fullName.trim().split(RegExp(r'\s+'));
-  String initials = '';
   int i = 0;
 
   while (i < words.length) {
     if (words[i].isNotEmpty) {
-      initials += words[i][0].toUpperCase();
+      result += '${words[i][0].toUpperCase()}.';
     }
     i++;
   }
 
-  return initials;
+  return result;
 }
 
+// Main Function
 void main() {
   // by MK
   print('Reg no: $regNo | D = $d | T = $t');
@@ -49,5 +50,7 @@ void main() {
   print('$name has ${countVowels(name)} vowels');
 
   print('--- Part B3: Get Initials ---');
-  print('Initials: ${getInitials(name)}');
+  print('Initials: ${initials(name)}');
+  print("Extra spaces: ${initials(' ana uwase ')}");
+  print('Empty input: "${initials('   ')}"');
 }
